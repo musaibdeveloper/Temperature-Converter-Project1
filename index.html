@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter 🌡️</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+
+    <style>
+      
+    </style>
+
+
+<body>
+
+    <h1>Temperature Converter 🌡️</h1>
+
+
+    <div class="div1">
+        <label>Celsius</label><br>
+        <input type="number" value="0"  id="cles">
+    </div>
+    <p style="text-align: center; color: brown; font-family: cursive;">Note : Enter any one value and get your
+        desired Value. Accepts only Number 🔢</p>
+    <div class="div2">
+        <label>Faranite</label><br>
+
+        <input type="number" value="32"  id="far">
+    </div>
+
+</body>
+<script>
+
+    let cel = document.getElementById("cles");
+    // console.log(cel);
+    let fah = document.getElementById("far");
+    // console.log(fah);
+
+    cel.addEventListener("input", function () {
+        let userinput = this.value;
+        let convert = (userinput * 9 / 5) + 32;
+        if(!Number.isInteger(convert)){
+
+            convert = convert.toFixed(4)
+        
+        }
+        fah.value = convert
+    })
+
+
+
+    fah.addEventListener("input", function (){
+        let userInput2 = this.value;
+        let conver = (userInput2 - 32) * 5/9;
+        if(!Number.isInteger(conver)){
+            conver = conver.toFixed(3)
+        }
+        cel.value = conver
+
+    })
+
+
+
+</script>
+
+<footer>
+    <p>What is temperature? <br>
+        Temperature is an intensive quantity and describes the energy state of the matter. All materials have atoms and
+        molecules that are constantly moving, vibrating or rotating. The temperature of an object can be defined by the
+        average
+        kinetic energy of its atoms and molecules.</p>
+    <br>
+    <p>What is Celsius (°C)?<br>
+        Celsius is currently a derived unit for temperature in the SI system, Kelvin being the base unit. The unit and
+        the
+        actual Celsius scale was first presented by a Swede, Anders Celsius in 1742. The two main reference points of
+        the
+        Celsius scale were the freezing point of water (or melting point of ice) being defined as 0 °C and the boiling
+        point
+        of
+        water being 100 °C. </p>
+
+    <p> What is Fahrenheit (°F)? <br>
+        Fahrenheit scale was first introduced by a Dutch, Gabriel Fahrenheit in 1724. The two main reference points of
+        the
+        scale
+        are the freezing point of water being specified as 32°F and the temperature of human body being 96°F. Nowadays
+        the
+        Fahrenheit scale is redefined in a way that the melting point of ice is exactly 32 °F and the boiling point of
+        water
+        exactly 212 °F. The temperature of the human body is about 98 °F on the revised scale.</p>
+
+
+</footer>
+
+</html>

@@ -1,0 +1,38 @@
+  body {
+            padding: 50px 100px;
+        }
+
+        p {
+            color: gray;
+            font-size: large;
+        }
+
+        h1 {
+            text-align: center;
+            color: blue;
+            font-family: cursive;
+        }
+
+
+        #container {
+            text-align: center;
+            background-color: aqua;
+        }
+
+
+        .div1 {
+            text-align: center;
+            padding: 50px 100px;
+            color: red;
+
+            font-family: "cursive";
+            font-size: 30px;
+        }
+
+        .div2 {
+            text-align: center;
+            padding: 50px 100px;
+            color: rgb(red, green, blue);
+            font-family: "cursive";
+            font-size: 30px;
+        }
